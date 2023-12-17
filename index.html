@@ -8,10 +8,28 @@
     <style>
       #head {
         color: blue;
+        font-size: 80px;
         text-align: center;
         border: 5px double rgb(110, 195, 223);
         border-radius: 5px;
       }
+      #country-detail {
+        position: sticky;
+        top: 0;
+        background-color: antiquewhite;
+      }
+
+      h1 {
+        font-size: 30px;
+        color: rgb(224, 16, 96);
+      }
+
+      #country-detail img {
+        padding: 5px;
+        border: 5px double #dcdde1;
+        border-radius: 10px;
+      }
+
       #all-countries,
       #country-detail {
         display: grid;
@@ -27,7 +45,7 @@
       @media screen and (min-width: 100px) and (max-width: 768px) {
         #country-detail {
           grid-template-columns: repeat(1, 1fr);
-          color: rgb(224, 16, 96);
+          color: #4cd137;
         }
       }
       /*  */
