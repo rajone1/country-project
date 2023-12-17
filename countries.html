@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      @media only screen and (max-width: 455px) {
+        #all-countries {
+          background-color: red;
+          display: grid;
+          grid-template-columns: repeat(2, 1fr);
+          gap: 15px;
+        }
+      }
+      #head {
+        color: blue;
+        text-align: center;
+        border: 5px double rgb(110, 195, 223);
+        border-radius: 5px;
+      }
+      #all-countries,
+      #country-detail {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 15px;
+      }
+      .country {
+        border: 2px solid tomato;
+        margin: 5px;
+        padding: 10px;
+        border-radius: 10px;
+        background-color: lemonchiffon;
+        margin-top: 20px;
+      }
+    </style>
+  </head>
+  <body class="sm">
+    <h1 id="head">THE WORLD</h1>
+    <section id="country-detail"></section>
+    <section>
+      <div id="all-countries"></div>
+    </section>
+    <script src="./countries.js"></script>
+  </body>
+</html>
