@@ -24,7 +24,7 @@ const displaycountries = (get) => {
 >capital: ${country.capital ? country.capital[0] : "dont have capital"}</p>
 
 
-<button onclick="loadcountrydetails('${country.cca2}')">code</button> 
+<button onclick="loadcountrydetails('${country.cca2}')">Search Flag</button> 
 
 `;
     setcountries.appendChild(setelement);
