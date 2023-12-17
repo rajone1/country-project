@@ -56,7 +56,9 @@ const showCountryDetail = (country) => {
   console.log(country);
   const detailContainer = document.getElementById("country-detail");
   detailContainer.innerHTML = `
-         <h3>Name: ${country.name.common} </h3>
+         <h1>Name: ${country.name.common} </h1>
+         <h2
+>Capital: ${country.capital ? country.capital[0] : "dont have capital"}</h2>
          <img src="${country.flags.png}">
      `;
 };

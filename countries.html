@@ -6,14 +6,6 @@
     <title>Document</title>
 
     <style>
-      @media only screen and (max-width: 455px) {
-        #all-countries {
-          background-color: red;
-          display: grid;
-          grid-template-columns: repeat(2, 1fr);
-          gap: 15px;
-        }
-      }
       #head {
         color: blue;
         text-align: center;
@@ -23,9 +15,22 @@
       #all-countries,
       #country-detail {
         display: grid;
-        grid-template-columns: repeat(4, 1fr);
+        grid-template-columns: repeat(2, 1fr);
         gap: 15px;
       }
+      @media screen and (min-width: 100px) and (max-width: 768px) {
+        #all-countries {
+          grid-template-columns: repeat(1, 1fr);
+        }
+      }
+
+      @media screen and (min-width: 100px) and (max-width: 768px) {
+        #country-detail {
+          grid-template-columns: repeat(1, 1fr);
+          color: rgb(224, 16, 96);
+        }
+      }
+      /*  */
       .country {
         border: 2px solid tomato;
         margin: 5px;
